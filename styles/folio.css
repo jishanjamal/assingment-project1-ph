@@ -8,13 +8,14 @@
 
 
 header {
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
-    
-    
-    
+    padding: 1rem 2rem;
+    align-items: center;
+    box-sizing: border-box;
 }
-
 .resume-btn {
     background-color: white;
     color:rgba(13, 19, 33, 1);
@@ -54,4 +55,79 @@ main {
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
+}
+
+
+.why-web-dev {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 4rem 2rem;
+    margin: 2rem 0;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    color: #333;
+}
+
+.why-web-dev h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.why-web-dev p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+    color: #333;
+}
+
+.card-content {
+    max-width: 60%;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.learn-more-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.card img {
+    max-width: 30%;
+    border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+    .cards {
+        flex-direction: row;
+    }
 }
