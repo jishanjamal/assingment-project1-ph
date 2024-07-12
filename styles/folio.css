@@ -131,3 +131,6 @@ main {
         flex-direction: row;
     }
 }
+.facebook{
+    display: flex;
+}
